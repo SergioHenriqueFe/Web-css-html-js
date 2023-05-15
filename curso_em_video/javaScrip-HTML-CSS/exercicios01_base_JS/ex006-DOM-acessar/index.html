@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(106, 106, 230);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="titulo">Iniciando os estudos em DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id ="msg">Clique em mim</div>
+    <figure>
+        <!-- <img src="Screenshot 2023-05-15 at 14.26.41.png" alt="Representação da arvore">
+        <figcaption>•Arvore de representação de parentesco desse site (não foi inserindo a tag img nessa imagem)</figcaption>
+    
+    </figure> -->
+    <script>
+    // O que é DOM? -- Document object model  para dar acesso do html para o JS
+    //Como acessar
+    /*
+            • Por Marca (tag) 
+                • Dentro de documet - getElementsByTagName() [Seleção de mais de um objeto da mesma tag]           
+    */ 
+    var copor = window.document.body
+    copor.style.background= 'black'    
+    var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Usando JS: '+p1.innerText)
+        p1.style.color = 'blue' 
+
+    /*
+    • ID
+        • usar o getElementById()
+    */
+   var m = window.document.getElementById('msg')
+   m.style.color = 'red'
+   
+   /*
+    • Nome
+        • usar getElementsByName()[]
+   */
+  /*
+    • Classe
+        • getElementsByClassName()
+  */
+ /*
+    • Seletor
+        • querySelector()
+        •querySelectorAll()
+ */
+var tit = window.document.querySelector('h1#titulo')
+tit.style.background='red '
+
+
+    </script>
+    
+</body>
+</html>
