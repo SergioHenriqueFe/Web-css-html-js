@@ -10,15 +10,33 @@ header{
 }
 
 section{
+    text-align: center;
     background: white;
     border-radius: 10px;
-    padding: 15px;
+    padding: 0px;
     width: 500px;
     margin: auto;
-    box-shadow:5px 5px 10px rgb(16, 133, 216) ;
+    box-shadow:5px 5px 10px rgba(0, 2, 4, 0.214) ;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    
+}
+div{
+    margin: 0;
+    padding: 20px;
+}
+
+
+#foto{
+   height: 250px;
+   width: 250px;
+   border-radius: 100%;
+   
+    
 }
 
 footer{
+    
     text-align: center;
     font-style: italic;
     color:white;
