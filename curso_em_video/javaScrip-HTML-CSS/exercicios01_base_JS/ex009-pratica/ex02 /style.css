@@ -1,5 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fdfbfb;
+    
+}
 body{
-    background-color: rgb(34, 214, 238);
+
+    height: 100%;
+    background-color: #e10b0b;
     font: normal 15pt  Arial;
 }
 

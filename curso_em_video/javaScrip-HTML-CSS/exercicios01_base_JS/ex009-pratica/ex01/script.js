@@ -3,7 +3,7 @@ function carregar(){
     var imagem = window.document.getElementById('foto')
     var data = new Date()
     var hora = data.getHours()
-    var hora = 22
+   
     var saudacao= window.document.getElementById('saudacao')
    
     mensagem.innerText= `Agora são ${hora} horas.`
