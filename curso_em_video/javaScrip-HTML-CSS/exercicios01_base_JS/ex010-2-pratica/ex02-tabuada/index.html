@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horário</title>
+    <title>Verificador de idade</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1 id="saudacao">Bom dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div id="mensagem">  
-            Aqui vai aparecer a mensagem
-
+        <div>  
+            <p>Número <input type="number" name="txtn" id="txtn"><br> <input type="button" value="Gerar tabuada" onclick="tabuada"></p> 
         </div>
-        <div id="img">
-            <img src="image/noite.jpg" id="foto">
+        <div>
+            <select name="nameSeltab" id="seltab" size="10">
+                <option>Digite um Número</option>
+                
+            </select>
+            
         </div>
     </section>
     <footer>
