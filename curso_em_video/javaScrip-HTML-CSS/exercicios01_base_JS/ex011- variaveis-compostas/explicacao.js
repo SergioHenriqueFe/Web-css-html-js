@@ -8,6 +8,15 @@
 //conteudo = objetos1, objeto2...
 
 let numeros = [1,2,3]
-numeros=[3]=6 // acrescentar o valor 6 no indice 3,
-console.log(numeros)
+numeros=[3]= 6 // acrescentar o valor 6 no indice 3,
+numeros.push(7) // acrescenta e cria um idice novo 
+numeros.length // irá mostrar a quantida de indice
+numeros.sort() // color de forma ordenada 
+numeros.indexOf(2) // irá busca o número 2 no array e mostrar o idice dele
+for (let pos = 0; pos<numeros.length;pos++){
+    console.log(numeros[pos]) // para mostrar todos os numeros dentro do vetor
+}
+for (let pos in numeros){
+    console.log(numeros[pos])
+} //  para cada posição em num eu vou mostra num[p] for in só funciona para array e object
 
