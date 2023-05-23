@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#hero{
+    
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+    background-color: rgb(223, 135, 216);
+    position:relative;
+}
+@keyframes
+    jump{
+        0%,100%{
+           transform:translateY(0)
+
+           
+        }
+        50%{
+            transform:translateY(-30px)
+        }
+    }
+
+#emojiSmile{
+    position: absolute;
+    top:15%;
+    right: 49%;
+    display:block;
+    margin: 0;
+    animation: jump 2s infinite;
+    
+    
+}
+@keyframes
+    side{
+        0%,100%{
+           transform:translatex(1)
+ 
+        }
+        25%{
+            transform:translatex(-35px)
+        }
+        99%{
+            transform:translatex(40px)
+        }
+    }
+#titlePage{
+    position: absolute;
+    top:19%;
+    right: 40%;
+    display:block;
+    margin: 0;
+    color: rgb(157, 234, 192);
+    font-size: 36px;
+    animation: side 3s infinite;
+
+}
+#main{height: 200px;
+    padding: 20px;
+    background-image: linear-gradient(rgb(229, 134, 225), rgba(255, 255, 255, 0.809),rgb(255, 201, 199));
+    text-align: center;
+
+}
+
+h2{
+    display: inline;
+    text-align: center;
+}
+h2,span{
+    color:rgb(110, 75, 213);
+
+}
+span:hover{
+    
+    color:rgb(238, 89, 56);
+}
+footer{
+    background-position: right top;
+    background-image: url(image/balls.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    background-color:rgb(255, 201, 199) ;
+    height: 90px;
+}
+@keyframes 
+piscar{
+    0%{
+        color: rgb(110, 75, 213);
+    }
+    50%{
+        color: rgb(238, 89, 56);
+    } 
+    100%{
+        color:rgb(110, 75, 213);
+    }
+   
+}
+#titleHapy,span{
+   animation: piscar 3s infinite;     
+}
+
