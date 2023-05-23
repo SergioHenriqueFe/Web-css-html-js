@@ -43,9 +43,9 @@ body{
  
         }
         25%{
-            transform:translatex(-35px)
+            transform:translatex(-40px)
         }
-        99%{
+        100%{
             transform:translatex(40px)
         }
     }
