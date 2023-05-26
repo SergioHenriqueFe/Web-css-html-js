@@ -43,6 +43,7 @@
     border-radius: 10px;
     gap: 30px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.222);
+    animation: dark-to-light 0.3s ease-in;
 }
 
 #form_head{
@@ -132,4 +133,36 @@
 
 #button_login:hover{
     transform: scale(1.1);
+}
+
+.dark#login_form{
+    color:var(--color-light-50);
+    background-color: #312d37;
+    animation:light-to-dark 0.3s ease-in-out
+}
+.dark #forgot_password a:hover{
+   color:#ffffff
+}
+.dark#login_form #input-box label,.dark#login_form #input-field input,.dark#login_form #input-field i
+ {
+   color: var(--color-light-50);
+}
+
+@keyframes dark-to-light{
+    0%{
+        background-color: var(--color-dark-100);
+    }
+    
+    100%{
+        background-color: var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark{
+    0%{
+        background-color: var(--color-light-50);
+    }
+    100%{
+        background-color: var(--color-dark-100);
+    }
 }
